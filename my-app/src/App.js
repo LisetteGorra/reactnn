@@ -19,7 +19,7 @@ class App extends Component {
       
     });
     this.setState({
-      ninjas: ninjas
+      ninjas:  ninjas
     })
   }
   deleteNinja = (id) => {
