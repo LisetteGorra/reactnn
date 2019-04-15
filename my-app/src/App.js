@@ -25,15 +25,25 @@ class App extends Component {
   deleteNinja = (id) => {
     let ninjas = this.state.ninjas.filter(ninja => {
       return ninja.id !== id
+    });
+    this.setState({
+      ninjas: ninjas
     })
-    
+  }
+  
+  componentDidMount(){
+    console.log('Component mounted');
+  }
+  componentDidUpdate(prevProps, prevState){
+    console.log('component updated');
+    console.log(prevProps, prevState);
   }
   render() {
     return (
       <div className="App">
          <h1>My first React app!</h1>
          <p>Welcome :B</p>
-         <Ninjas deleteNinja={this.deleteNinja={this.state.ninjas}/>
+         <Ninjas deleteNinja={this.deleteNinja} ninjas={this.state.ninjas}/>
          <AddNinja addNinja={this.addNinja}/>
       </div>
     );
