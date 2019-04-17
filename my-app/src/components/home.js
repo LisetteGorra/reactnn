@@ -7,7 +7,7 @@ class Home extends Component {
         posts: []
     }
     componentDidMount() {
-        axios.get('https://jsonplaceholder.tyicode.com/post')
+        axios.get(' ')
             .then(res => {
                 console.log(res)
                 this.setState({
