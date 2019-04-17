@@ -16,9 +16,7 @@ const Rainbow = (WrappedComponent) => {
 
 }
 
-<<<<<<< HEAD
-export default Rainbow;
-=======
 export default Rainbow;
 
->>>>>>> version28.0
+// https://jsonplaceholder-typicode.com/posts
+
