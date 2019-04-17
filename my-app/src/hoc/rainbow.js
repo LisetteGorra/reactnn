@@ -16,4 +16,9 @@ const Rainbow = (WrappedComponent) => {
 
 }
 
+<<<<<<< HEAD
 export default Rainbow;
+=======
+export default Rainbow;
+
+>>>>>>> version28.0
